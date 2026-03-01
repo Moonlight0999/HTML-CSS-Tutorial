@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('../Assets/Images/cat.jpg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-x: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 300px;
+        height: 600px;
+        background-image: url('../Assets/Images/dog.jpg');
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to top right, red, blue);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(circle at 10% 50%, white, yellow, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+      temporibus eius labore consequuntur ipsam nam tempora, voluptatem mollitia
+      beatae incidunt quibusdam magnam perspiciatis nulla corrupti, illo
+      corporis, et ullam voluptates! Qui, deleniti. Pariatur soluta ut suscipit
+      obcaecati explicabo nobis eligendi, ducimus quaerat aliquid, magni
+      possimus quasi minus quia sed quae ipsa quod inventore quis dolores
+      accusamus fugiat! Minima, doloribus ex. Ratione, rerum! Fugit molestiae
+      dolorem odio ipsam sunt sed iure cum et aliquam tempora natus vero, optio,
+      eius corrupti neque ducimus assumenda inventore ex beatae praesentium
+      facere eum ab. Distinctio? Quisquam quae veritatis non optio, laborum modi
+      laboriosam sit numquam, distinctio tenetur, voluptas minus! Quisquam harum
+      mollitia corporis rem quaerat, ad voluptate, consequuntur quibusdam illo
+      quo saepe dolorum sapiente ipsum. Quas iste deserunt explicabo ullam nam
+      delectus sapiente mollitia error modi, adipisci corrupti ea, incidunt
+      ducimus corporis officiis numquam. Inventore libero tempora quisquam ipsum
+      nobis quos non voluptatem eum veritatis. Neque architecto est velit
+      inventore sequi quod odio autem magni facere odit. Enim adipisci impedit
+      sit deserunt cupiditate facere, ad assumenda est incidunt, tempore, veniam
+      ab harum sint animi similique. Cumque, quo repellat odit odio tempore
+      reiciendis quae laudantium doloremque expedita sequi tenetur maxime
+      asperiores est consequatur magni praesentium laboriosam possimus qui
+      voluptates veniam? Harum esse facilis ex error quod! Cum enim impedit
+      molestiae facere. Odit, architecto! Autem repellendus quibusdam
+      laboriosam.
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+      temporibus eius labore consequuntur ipsam nam tempora, voluptatem mollitia
+      beatae incidunt quibusdam magnam perspiciatis nulla corrupti, illo
+      corporis, et ullam voluptates! Qui, deleniti. Pariatur soluta ut suscipit
+      obcaecati explicabo nobis eligendi, ducimus quaerat aliquid, magni
+      possimus quasi minus quia sed quae ipsa quod inventore quis dolores
+      accusamus fugiat! Minima, doloribus ex. Ratione, rerum! Fugit molestiae
+      dolorem odio ipsam sunt sed iure cum et aliquam tempora natus vero, optio,
+      eius corrupti neque ducimus assumenda inventore ex beatae praesentium
+      facere eum ab. Distinctio? Quisquam quae veritatis non optio, laborum modi
+      laboriosam sit numquam, distinctio tenetur, voluptas minus! Quisquam harum
+      mollitia corporis rem quaerat, ad voluptate, consequuntur quibusdam illo
+      quo saepe dolorum sapiente ipsum. Quas iste deserunt explicabo ullam nam
+      delectus sapiente mollitia error modi, adipisci corrupti ea, incidunt
+      ducimus corporis officiis numquam. Inventore libero tempora quisquam ipsum
+      nobis quos non voluptatem eum veritatis. Neque architecto est velit
+      inventore sequi quod odio autem magni facere odit. Enim adipisci impedit
+      sit deserunt cupiditate facere, ad assumenda est incidunt, tempore, veniam
+      ab harum sint animi similique. Cumque, quo repellat odit odio tempore
+      reiciendis quae laudantium doloremque expedita sequi tenetur maxime
+      asperiores est consequatur magni praesentium laboriosam possimus qui
+      voluptates veniam? Harum esse facilis ex error quod! Cum enim impedit
+      molestiae facere. Odit, architecto! Autem repellendus quibusdam
+      laboriosam.
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+      temporibus eius labore consequuntur ipsam nam tempora, voluptatem mollitia
+      beatae incidunt quibusdam magnam perspiciatis nulla corrupti, illo
+      corporis, et ullam voluptates! Qui, deleniti. Pariatur soluta ut suscipit
+      obcaecati explicabo nobis eligendi, ducimus quaerat aliquid, magni
+      possimus quasi minus quia sed quae ipsa quod inventore quis dolores
+      accusamus fugiat! Minima, doloribus ex. Ratione, rerum! Fugit molestiae
+      dolorem odio ipsam sunt sed iure cum et aliquam tempora natus vero, optio,
+      eius corrupti neque ducimus assumenda inventore ex beatae praesentium
+      facere eum ab. Distinctio? Quisquam quae veritatis non optio, laborum modi
+      laboriosam sit numquam, distinctio tenetur, voluptas minus! Quisquam harum
+      mollitia corporis rem quaerat, ad voluptate, consequuntur quibusdam illo
+      quo saepe dolorum sapiente ipsum. Quas iste deserunt explicabo ullam nam
+      delectus sapiente mollitia error modi, adipisci corrupti ea, incidunt
+      ducimus corporis officiis numquam. Inventore libero tempora quisquam ipsum
+      nobis quos non voluptatem eum veritatis. Neque architecto est velit
+      inventore sequi quod odio autem magni facere odit. Enim adipisci impedit
+      sit deserunt cupiditate facere, ad assumenda est incidunt, tempore, veniam
+      ab harum sint animi similique. Cumque, quo repellat odit odio tempore
+      reiciendis quae laudantium doloremque expedita sequi tenetur maxime
+      asperiores est consequatur magni praesentium laboriosam possimus qui
+      voluptates veniam? Harum esse facilis ex error quod! Cum enim impedit
+      molestiae facere. Odit, architecto! Autem repellendus quibusdam
+      laboriosam.
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
