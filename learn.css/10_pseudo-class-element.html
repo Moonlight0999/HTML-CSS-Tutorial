@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo CLass&Element</title>
+    <style>
+      a {
+        font-size: 30px;
+      }
+      a:link {
+        color: cyan;
+      }
+      a:visited {
+        color: red;
+      }
+      a:hover {
+        color: blue;
+        font-weight: 900;
+      }
+      fieldset:hover {
+        background-color: lightgray;
+        box-shadow: 0 0 20px grey;
+      }
+      a:active {
+        color: yellow;
+      }
+      input:focus {
+        outline: none;
+        border: 3px solid red;
+        box-shadow: 0 0 20px red;
+      }
+      .field {
+        margin-bottom: 10px;
+      }
+      li:nth-child(odd) {
+        background-color: yellow;
+      }
+      li:not(.target) {
+        font-size: 30px;
+      }
+
+      /* 가상 요소 */
+      .required:after {
+        content: '*';
+        margin-right: 2px;
+        color: red;
+        font-size: 18px;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:hover:after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 0px;
+        left: 56px;
+        background-color: black;
+        color: white;
+        width: 200px;
+      }
+      .letter::first-letter {
+        font-size: 60px;
+        color: blue;
+      }
+      .line::first-line {
+        background-color: yellow;
+        font-size: 60px;
+        color: blue;
+      }
+      p::selection {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Pseudo Class</legend>
+      <div>
+        <a href="https://naver.com">Naver</a>
+        <a href="https://kakao.com">kakao</a>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>focus, before, after</legend>
+      <div class="field">
+        <label class="required" for="name">name</label>
+        <input type="text" id="name" />
+      </div>
+      <div class="field">
+        <label class="required" for="age">age</label>
+        <input type="text" id="age" />
+      </div>
+      <button data-tooltip="click to send to info">send</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>nth-child, not</legend>
+      <ul>
+        <li class="target">1content</li>
+        <li>2content</li>
+        <li>3content</li>
+        <li>4content</li>
+        <li>5content</li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>first-letter, first-line, section</legend>
+      <p class="letter">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A id placeat
+        praesentium esse molestiae sunt alias reprehenderit aspernatur pariatur.
+        Exercitationem cumque fuga consectetur ducimus aut unde voluptas.
+        Necessitatibus, iure fuga?
+      </p>
+      <p class="line">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        velit. Debitis dolores officia esse. Sunt fugiat quam nam itaque, quos
+        aliquam in porro, et adipisci quo animi illum voluptate ipsum!
+      </p>
+    </fieldset>
+  </body>
+</html>
